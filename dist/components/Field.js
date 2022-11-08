@@ -19,3 +19,4 @@ var Field = function (_a) {
     return ((0, jsx_runtime_1.jsxs)("div", __assign({ className: "container" }, { children: [(0, jsx_runtime_1.jsx)("label", __assign({ htmlFor: "email", className: "label" }, { children: label || "" })), (0, jsx_runtime_1.jsx)("input", { type: "email", id: "email", className: "input", placeholder: "test@mail.com", required: true })] })));
 };
 exports.Field = Field;
+exports.default = exports.Field;

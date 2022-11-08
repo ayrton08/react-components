@@ -21,3 +21,5 @@ export const Field = ({ label }: FieldProps) => {
     </div>
   );
 };
+
+export default Field;

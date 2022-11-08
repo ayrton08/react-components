@@ -87,48 +87,7 @@ export const Login = ({
         </Form>
       )}
     </Formik>
-    // <form className={dark ? "form-dark" : "form-light"} onSubmit={onEvent}>
-    // <img src={icon} alt="" className="login" />
-    // <h3>Login</h3>
-
-    // {/* <label htmlFor="username">Username</label> */}
-    // <input
-    //   type="text"
-    //   placeholder="Email"
-    //   id="username"
-    //   className={dark ? "input-dark" : "input-light"}
-    // />
-
-    // {/* <label htmlFor="password">Password</label> */}
-    // <input
-    //   type="password"
-    //   placeholder="Password"
-    //   id="password"
-    //   className={dark ? "input-dark" : "input-light"}
-    // />
-
-    // <button className={dark ? "button-dark" : "button-light"}>Log In</button>
-    // <a
-    //   href={onRegister}
-    //   className={dark ? "register-dark" : "register-light"}
-    // >
-    //   Create new account
-    // </a>
-    // <div className="social">
-    //   {google && (
-    //     <div className="icons-container">
-    //       {google && <img src={google || ""} alt="" className="icon" />}
-    //       <span>Google</span>
-    //     </div>
-    //   )}
-    //   {facebook && (
-    //     <div className="icons-container">
-    //       {facebook && <img src={facebook || ""} alt="" className="icon" />}
-
-    //       <span>Facebook</span>
-    //     </div>
-    //   )}
-    // </div>
-    // </form>
   );
 };
+
+export default Login;

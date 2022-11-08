@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.MyLabel = exports.Login = exports.Field = exports.Button = void 0;
+exports.Card = exports.MyLabel = exports.Login = exports.Field = exports.Button = void 0;
 var Button_1 = require("./stories/Button");
 Object.defineProperty(exports, "Button", { enumerable: true, get: function () { return Button_1.Button; } });
 var Field_1 = require("./components/Field");
@@ -9,3 +9,5 @@ var Login_1 = require("./components/Login");
 Object.defineProperty(exports, "Login", { enumerable: true, get: function () { return Login_1.Login; } });
 var MyLabel_1 = require("./components/MyLabel");
 Object.defineProperty(exports, "MyLabel", { enumerable: true, get: function () { return MyLabel_1.MyLabel; } });
+var Card_1 = require("./components/Card");
+Object.defineProperty(exports, "Card", { enumerable: true, get: function () { return Card_1.Card; } });
