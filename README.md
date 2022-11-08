@@ -8,4 +8,4 @@ yarn add aj-my-storybook
 
 ## Demo:
 
-[Storybook Components](https://ayrton08.github.io/react-components/?path=/story/example-introduction--page)
+[React Components](https://ayrton08.github.io/react-components/?path=/story/example-introduction--page)
