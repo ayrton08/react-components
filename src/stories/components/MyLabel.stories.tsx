@@ -17,7 +17,7 @@ const Template: ComponentStory<typeof MyLabel> = (args) => (
 export const Basic = Template.bind({});
 // definir un valor inicial por default
 Basic.args = {
-  size: "h2",
+  size: "h1",
   allCaps: false,
 };
 
