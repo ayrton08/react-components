@@ -10,6 +10,10 @@
     "url": "https://github.com/ayrton08/react-components",
     "type": "git"
   },
+  "peerDependencies": {
+    "react": ">=16",
+    "typescript": ">=4.0.0"
+  },
   "release": {
     "branches": [
       "main"
