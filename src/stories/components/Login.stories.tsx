@@ -1,15 +1,31 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { Login } from "../../components/Login";
+import login from "../assets/custom/login.svg";
+import facebook from "../assets/custom/facebook.svg";
+import google from "../assets/custom/google.svg";
 
 export default {
   title: "Ui/Etiquetas/Login",
   component: Login,
 } as ComponentMeta<typeof Login>;
 
-const Template: ComponentStory<typeof Login> = (args) => <Login />;
+const Template: ComponentStory<typeof Login> = (args) => <Login {...args} />;
 
-export const Basic = Template.bind({});
-// definir un valor inicial por default
-// Basic.args = {
-//   label: "Email",
-// };
+export const Light = Template.bind({});
+Light.args = {
+  dark: false,
+  icon: login,
+  facebook: facebook,
+  google: google,
+};
+
+export const Dark = Template.bind({});
+Dark.args = {
+  dark: true,
+  icon: login,
+  facebook: facebook,
+  google: google,
+  onEvent: (value) => {
+    console.log(value);
+  },
+};

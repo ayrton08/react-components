@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: black;
 }
 body {
   background-color: #4c4c50;
@@ -49,12 +50,20 @@ form {
   flex-direction: column;
   align-items: center;
 }
-form * {
+.form-dark * {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   letter-spacing: 0.5px;
   outline: none;
   border: none;
+}
+.form-light * {
+  font-family: "Poppins", sans-serif;
+  color: #424242;
+  letter-spacing: 0.5px;
+  outline: none;
+  border-color: #757575;
+  /* border: 3px; */
 }
 form h3 {
   /* font-size: 32px;
@@ -70,7 +79,7 @@ label {
   font-weight: 500;
   align-self: flex-start;
 }
-input {
+.input-dark {
   display: block;
   height: 50px;
   width: 100%;
@@ -79,13 +88,36 @@ input {
   padding: 0 10px;
   margin-top: 8px;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 200;
+  color: white;
 }
-::placeholder {
-  color: #e5e5e5;
+
+.input-dark:hover {
+  border-color: white;
 }
-button {
-  margin-top: 50px;
+input {
+  margin-bottom: 10px;
+}
+.input-light {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 200;
+  color: black;
+}
+.input-dark::placeholder {
+  color: white;
+}
+.input-light::placeholder {
+  color: #313037;
+}
+.button-dark {
+  margin-top: 20px;
   width: 100%;
   background-color: #ffffff;
   color: #080710;
@@ -95,8 +127,24 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+.button-light {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #313037;
+  color: white;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-button:hover {
+.button-light:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.button-dark:hover {
   background-color: #313037;
   color: white;
 }
@@ -133,4 +181,22 @@ button:hover {
 
 .login {
   width: 170px;
+}
+
+.register-dark {
+  padding-top: 10px;
+}
+.register-dark:hover {
+  cursor: pointer;
+  color: #66bb6a;
+}
+
+.register-light {
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.register-light:hover {
+  cursor: pointer;
+  color: #388E3C;
 }
