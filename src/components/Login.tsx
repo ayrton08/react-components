@@ -31,14 +31,11 @@ export const Login = ({
   return (
     <Formik
       initialValues={initialValues}
-      onSubmit={() => {}}
+      onSubmit={(values) => onEvent({ ...values })}
       validationSchema={schema}
     >
       {() => (
-        <Form
-          className={dark ? "form-dark" : "form-light"}
-          onSubmit={(values) => onEvent({ ...values })}
-        >
+        <Form className={dark ? "form-dark" : "form-light"}>
           <img src={icon} alt="" className="login" />
           <h3>Login</h3>
 
