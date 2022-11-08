@@ -3,7 +3,7 @@
 Este paquete me sirve para practicar React Components + Storybook + NPM Publish
 
 ```
-yarn add aj-my-storybook
+yarn add aj-react-components
 ```
 
 ## Demo:
