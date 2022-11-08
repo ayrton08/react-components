@@ -19,13 +19,15 @@ Light.args = {
   google: google,
 };
 
+const on = (value: any) => {
+  console.log(value);
+};
+
 export const Dark = Template.bind({});
 Dark.args = {
   dark: true,
   icon: login,
   facebook: facebook,
   google: google,
-  onEvent: (value) => {
-    console.log(value);
-  },
+  onEvent: on,
 };

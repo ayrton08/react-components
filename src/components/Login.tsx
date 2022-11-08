@@ -34,7 +34,7 @@ export const Login = ({
       onSubmit={(values) => onEvent({ ...values })}
       validationSchema={schema}
     >
-      {() => (
+      {({ handleChange }) => (
         <Form className={dark ? "form-dark" : "form-light"}>
           <img src={icon} alt="" className="login" />
           <h3>Login</h3>
@@ -45,6 +45,7 @@ export const Login = ({
             id="username"
             className={dark ? "input-dark" : "input-light"}
             name="email"
+            onChange={handleChange}
           />
 
           <input
@@ -53,6 +54,7 @@ export const Login = ({
             id="password"
             className={dark ? "input-dark" : "input-light"}
             name="password"
+            onChange={handleChange}
           />
 
           <button
