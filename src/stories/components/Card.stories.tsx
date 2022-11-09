@@ -1,6 +1,6 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { Card } from "../../components/Card";
-import google from "../assets/custom/google.svg";
+import shoe from "../assets/custom/shoe.svg";
 
 export default {
   title: "Ui/Etiquetas/Card",
@@ -10,10 +10,10 @@ export default {
 const Template: ComponentStory<typeof Card> = (args) => (
   <Card
     price={200}
-    description="Una zapatilla"
-    title="Zapatilla"
-    category="Calzados"
-    image={google}
+    description="The best shoe in the world"
+    title="Shoe"
+    category="Shoes"
+    image={shoe}
   />
 );
 
