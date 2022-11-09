@@ -18,7 +18,9 @@ const Template: ComponentStory<typeof Card> = (args) => (
 );
 
 export const Basic = Template.bind({});
-Basic.args = {};
+Basic.args = {
+  dark: "light",
+};
 
 // export const Dark = Template.bind({});
 // Dark.args = {

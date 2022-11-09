@@ -12,6 +12,7 @@ export interface LoginProps {
   onRegister?: string;
   onEvent: (args: any) => any;
   schema?: any;
+  passwordless: boolean;
 }
 
 const initialValues = {
@@ -27,6 +28,7 @@ export const Login = ({
   onRegister,
   onEvent,
   schema,
+  passwordless = false,
 }: LoginProps) => {
   return (
     <Formik
@@ -47,15 +49,16 @@ export const Login = ({
             name="email"
             onChange={handleChange}
           />
-
-          <input
-            type="password"
-            placeholder="Password"
-            id="password"
-            className={dark ? "input-dark" : "input-light"}
-            name="password"
-            onChange={handleChange}
-          />
+          {!passwordless && (
+            <input
+              type="password"
+              placeholder="Password"
+              id="password"
+              className={dark ? "input-dark" : "input-light"}
+              name="password"
+              onChange={handleChange}
+            />
+          )}
 
           <button
             className={dark ? "button-dark" : "button-light"}

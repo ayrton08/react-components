@@ -9,7 +9,7 @@
 a {
   text-decoration: none;
 }
-.product-card {
+.dark {
   font-family: "Roboto", sans-serif;
   width: 280px;
   position: relative;
@@ -17,8 +17,20 @@ a {
   margin: 50px auto;
   background: #fafafa;
 }
+.light {
+  font-family: "Roboto", sans-serif;
+  width: 280px;
+  position: relative;
+  box-shadow: 0 2px 7px #363636;
+  margin: 50px auto;
+  background: #fafafa;
+}
+
 @media (width > 640px) {
-  .product-card {
+  .light {
+    width: 350px;
+  }
+  .dark {
     width: 350px;
   }
 }

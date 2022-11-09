@@ -7,6 +7,7 @@ export interface CardProps {
   image: string;
   title: string;
   category?: string;
+  dark?: "dark" | "light";
 }
 
 export const Card = ({
@@ -16,9 +17,10 @@ export const Card = ({
   title,
   category,
   onEvent,
+  dark = "dark",
 }: CardProps) => {
   return (
-    <div className="product-card">
+    <div className={dark}>
       <div className="badge">Hot</div>
       <div className="product-tumb">
         <img src={image} alt="" />
